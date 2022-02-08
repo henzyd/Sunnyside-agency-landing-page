@@ -11,8 +11,11 @@ header {
     background-image: url("./images/mobile/image-header.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 80vh;
     background-image: center;
+    text-align: center;
+    color: white;
+    background-position: center;
 }
 
 nav {
@@ -40,4 +43,113 @@ nav button {
     background-color: transparent;
     border: none;
     cursor: pointer;
+}
+
+header h1 {
+    font-family: "fraunces";
+    text-transform: uppercase;
+    margin: 12vh 0;
+    font-size: 40px;
+}
+
+
+#features > div {
+    display: flex;
+    height: 100vh;
+    flex-direction: column-reverse;
+}
+
+#features #stand-out {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#features > div > * {
+    flex: 1;
+}
+
+#features > div figure img {
+    width: 100%;
+    min-height: 100%;
+}
+
+.desktop {
+    display: none;
+}
+
+#features > div .content {
+    padding: 15%;
+    text-align: center;
+    background-color: rgb(251, 255, 224);
+}
+
+#features > div .content h1 {
+    font-family: "Fraunces";
+    margin-bottom: 15px;
+}
+
+#features > div .content p {
+    margin-bottom: 15px;
+}
+
+#features > div .content a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.graphic {
+    background-image: url("./images/mobile/image-graphic-design.jpg");
+    background-size: cover;
+    height: 350px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 5% 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        background-image: url("./images/desktop/image-header.jpg");
+        height: 100vh;
+    }
+
+    header h1 {
+        font-size: 50px;
+    }
+
+    #features > div {
+        flex-direction: row;
+        height: auto;
+    }
+
+    #features #stand-out {
+        flex-direction: row;
+        height: auto;
+    }
+
+    #features > div > * {
+        flex: 1 1 50%;
+    }
+
+    #features > div .content {
+        padding: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: inline-block;
+    }
+
+    .graphic {
+        background-image: url("./images/desktop/image-graphic-design.jpg");
+    }
 }
