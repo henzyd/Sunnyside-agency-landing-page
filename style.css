@@ -59,6 +59,7 @@ header h1 {
     flex-direction: column-reverse;
 }
 
+
 #features #stand-out {
     display: flex;
     height: 100vh;
@@ -97,16 +98,116 @@ header h1 {
     color: black;
     text-decoration: none;
     text-transform: uppercase;
+    font-family: "Fraunces";
+}
+
+#features #services > div {
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 5% 50px;
+    text-align: center;
+}
+
+#features #services > div h1 {
+    font-family: "Fraunces";
+    margin-bottom: 15px;
+}
+
+#features #services > div p {
+    line-height: 1.5;
 }
 
 .graphic {
     background-image: url("./images/mobile/image-graphic-design.jpg");
-    background-size: cover;
-    height: 350px;
-    display: flex;
-    align-items: flex-end;
-    padding: 0px 5% 20px;
+}
+
+.photography {
+    background-image: url("./images/mobile/image-photography.jpg");
+}
+ 
+#features #testimonials {
+    flex-direction: column;
+    background-color: rgb(251, 255, 224);
+}
+
+#features #testimonials .title {
+    flex: none;
+}
+
+#features #testimonials .title h2 {
+    margin: 7%;
+    font-size: 19px;
     text-align: center;
+    font-family: "Fraunces";
+    text-transform: uppercase;
+    color: rgb(175, 169, 169); 
+}
+
+#features #testimonials .under {
+    padding-left: 8.1%;
+    padding-right: 8.1%;
+}
+
+/* #features #testimonials .profile {
+    flex: none;
+} */
+
+#features #testimonials figure {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    overflow: hidden;
+    align-content: center;
+    margin: auto;
+    margin-bottom: 8%;
+    /* margin-top: 16%; */
+}
+
+#features #testimonials figure + p {
+    line-height: 1.5;
+    font-size: 18px;
+    color: rgb(112, 106, 106);
+    text-align: center;
+    padding: 2%;
+}
+
+#features #testimonials h3 {
+    text-align: center;
+    font-family: "Fraunces";
+    font-weight: 900;
+    margin-top: 10.5%;
+    margin-bottom: 3.1%;
+}
+
+#features #testimonials figure + p + h3 + p {
+    color: rgb(200, 189, 189);
+    text-align: center;
+    margin-bottom: 28.5%;
+}
+
+/* #features #finishing .part-a .one-bottle .desktop {
+    display: none;
+} */
+
+/* #features #finishing .one {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+} */
+
+/* #features #finishing .part-a .desktop {
+    display: none;
+} */
+
+#features #finishing .part-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
 }
 
 @media screen and (min-width: 768px) {
@@ -114,16 +215,16 @@ header h1 {
         background-image: url("./images/desktop/image-header.jpg");
         height: 100vh;
     }
-
+    
     header h1 {
         font-size: 50px;
     }
-
+    
     #features > div {
         flex-direction: row;
         height: auto;
     }
-
+    
     #features #stand-out {
         flex-direction: row;
         height: auto;
@@ -134,22 +235,110 @@ header h1 {
     }
 
     #features > div .content {
-        padding: 5%;
+        padding: 6%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         flex-direction: column;
+        text-align: left;
     }
-
+    
     .mobile {
         display: none;
     }
-
+    
     .desktop {
         display: inline-block;
     }
-
+    
     .graphic {
         background-image: url("./images/desktop/image-graphic-design.jpg");
     }
+    
+    .photography {
+        background-image: url("./images/desktop/image-photography.jpg");
+    }
+    
+    #features #testimonials .under {
+        display: flex;
+        padding-left: 8.5%;
+        padding-right: 8.5%;
+        padding-bottom: 8%;
+        padding-top: 3.5%;
+    }
+
+    #features #testimonials .title h2 {
+        margin-top: 10%;
+        margin-bottom: 1.9%;
+        font-size: 26px;
+        text-align: center;
+        font-family: "Fraunces";
+        text-transform: uppercase;
+        color: rgb(175, 169, 169); 
+    }
+    
+    #features #testimonials figure {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        overflow: hidden;
+        align-content: center;
+        margin: auto;
+        /* margin-bottom: 13.5%; */
+        /* margin-top: 16%; */
+    }
+
+    /* #features #finishing .part-a .one-bottle .mobile {
+        display: none;
+    }
+
+    #features #finishing .part-a .one-orange .mobile {
+        display: none;
+    } */
+
+    #features #finishing {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    #features #testimonials figure + p {
+        line-height: 1.5;
+        font-size: 18px;
+        color: rgb(112, 106, 106);
+        text-align: center;
+        padding: 2%;
+        padding-top: 50px;
+    }
+    
+    #features #testimonials h3 {
+        text-align: center;
+        font-family: "Fraunces";
+        font-weight: 900;
+        margin-top: 10.5%;
+        margin-bottom: 3.1%;
+    }
+    
+    #features #testimonials figure + p + h3 + p {
+        color: rgb(200, 189, 189);
+        text-align: center;
+        margin-bottom: 28.5%;
+    }
+
+    #features #finishing .part-a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        height: 300px;
+        width: 300px;
+    }
+
+    #features #finishing .part-a .mobile {
+        display: none;
+    }
+    
+    /* #features #testimonials .title {
+        flex: none;
+    } */
 }
